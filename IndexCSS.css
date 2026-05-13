@@ -1,15 +1,35 @@
 title{
 
 }
+
 body{
     padding: 0 20px;
-    color: #F5F5F5;
+        background-color: rgb(196, 196, 196);
 }
 h1{
     color: #4B5563;
     font-size: 90px ;
     font-family: 'Times New Roman', Times, serif;
 
+}
+.contenedor0{
+    height: 100px;
+    width: 1200px;
+    background-color: lightgreen;
+    margin: 40px;
+    
+
+}
+.caja0{
+    height: 100px;
+    width: 1200px;
+    background-color: #919191;
+    border: 15px solid black;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+       box-shadow: 20px 20px 5px gray;
+ 
 }
 p{
     color:#444444;
@@ -19,14 +39,16 @@ p{
 }
 h3{
     color: rgb(227, 66, 34);
-    font-size: 55px;
+    font-size: 35px;
     font-family: 'Times New Roman', Times, serif;
+ 
 
 }
 h2{
     color: rgb(227, 66, 34);
-    font-size: 65px;
+    font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+
 
 }
 
@@ -40,8 +62,11 @@ h2{
 li{
     color:#444444;
     font-size: 20px;
-    
 
 
+}
+
+img{
+       box-shadow: 20px 20px 5px gray;
 }
 
