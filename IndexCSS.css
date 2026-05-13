@@ -1,8 +1,47 @@
 title{
 
 }
+body{
+    padding: 0 20px;
+    color: #F5F5F5;
+}
 h1{
     color: #4B5563;
+    font-size: 90px ;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+p{
+    color:#444444;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     
+}
+h3{
+    color: rgb(227, 66, 34);
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h2{
+    color: rgb(227, 66, 34);
+    font-size: 65px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.Clase1{
+     display: flex;
+    gap: 20px;
+    justify-content: center;
+ 
+}
+
+li{
+    color:#444444;
+    font-size: 20px;
+    
+
+
 }
 
