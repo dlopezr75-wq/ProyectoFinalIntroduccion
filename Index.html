@@ -4,31 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Principal</title>
+  
     <link rel="stylesheet" href="/normalize.css">
-    <link rel="stylesheet" href="/IndexCSS.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1> Mi Portafolio</h1>
-        <div class="Clase1">
+    <div class="container">
+        <header class="header">
+            <h1>Portafolio Derek Rodriguez</h1>
+            <p>Universidad Mariano Galvez</p>
+        </header>
 
-        </div>
-          
-        <div class="caja0">
-            
-        <p><a href="/DesarrolloHumano.html">Desarrollo</a></p>
-        <p><a href="/Metodologia.html">Metodologia de la Investigacion</a></p>
-        <p><a href="/Contabilidad.html">Contabilidad</a></p>
-        <p><a href="/LogicaSistemas.html">Logica de Sistemas</a></p>
-        <p><a href="/Introduccion.html">Introduccion a Sistemas</a></p>
-            
-        </div>
-    </div>
+        <aside class="sidebar-left">
+            <h3>Menú Navegación</h3>
+            <ul>
+                <li><a href="index.html">Pagina Principal</a></li>
+                <li><a href="DesarrolloHumano.html">Desarrollo Humano  </a></li>
+                <li><a href="/Metodologia.html">Metodologia de la Investigacion</a></li>
+                <li><a href="/Contabilidad.html">Contabilidad</a></li>
+                <li><a href="/LogicaSistemas.html">Logica de Sistemas</a></li>
+                <li><a href="/Introduccion.html">Introduccion de Sistemas</a></li>
+            </ul>
+        </aside>
 
-    <div style="display: flex;">
+        <main class="content">
+            <h2>Quien Soy</h2>
 
-    <div style="width: 33%;">
-        <h3>¿Quien soy?</h3>
+            <div style="display: flex;">
+
+    <div style="width: 50%;">
+        <h3>Mi Historia</h3>
         <p>Soy un joven de origen Guatemalteco naci en la Capital actualmente tengo 19 años, desde siempre 
             me ha apacionado la tecnologia y constantemente superarme a mi mismo, no solo disfrutar de la 
             meta sino tambien del camino. Hablando de metas la mia es graduarme de Ingenieria en Sistemas 
@@ -36,7 +41,7 @@
         </p>
     </div>
 
-    <div style="width: 33%;">
+    <div style="width: 50%;">
         <h3>Hobies</h3>
         <ol>
             <li>Gym</li>
@@ -55,21 +60,16 @@
             </tr>
         </table>
 
-    </div>
+        </main>
 
-        <div style="width: 34%;">
+        <aside class="sidebar-right">
         <h3>Imagen</h3>
         <img src="IMG/IMAGEN DK.jpg" alt="IMAGEN DK" height="250" width="200">
-    </div>
+        </aside>
 
-</div>
+        <footer class="footer">
+            <p>Derek Fernando Lopez Rodriguez - Universidad Mariano Galvez</p>
+        </footer>
 
-</table>
-        </div>
-
-
-
-
-    </main>
 </body>
 </html>

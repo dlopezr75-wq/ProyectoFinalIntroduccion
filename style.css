@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Configuración de CSS GRID */
+.container {
+    display: grid;
+    min-height: 100vh;
+    /* Definición de 3 columnas: Lado (200px), Centro (Flexible), Lado (200px) */
+    grid-template-columns: 220px 1fr 220px;
+    /* Definición de filas: Auto para header, Flexible para contenido, Auto para footer */
+    grid-template-rows: auto 1fr auto;
+    
+    /* Asignación de áreas */
+    grid-template-areas: 
+        "header header header"
+        "left content right"
+        "footer footer footer";
+    
+    gap: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Asignación de elementos a las áreas definidas */
+.header { grid-area: header; background-color: #E11104; color: white; padding: 20px; text-align: center; border-radius: 8px; }
+.sidebar-left { grid-area: left; background-color: #ffffff; padding: 15px; border-radius: 8px; border-left: 5px solid #B21A10; }
+.content { grid-area: content; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.sidebar-right { grid-area: right; background-color: #ffffff; padding: 15px; border-radius: 8px; border-right: 5px solid #B21A10; }
+.footer { grid-area: footer; background-color: #E11104; color: white; padding: 10px; text-align: center; border-radius: 8px; font-size: 0.9em; }
+
+/* Estilos de adorno profesional */
+h1, h2, h3 { margin-top: 0; }
+ul { list-style: none; padding: 0; }
+li { margin-bottom: 10px; }
+a { text-decoration: none; color: #B21A10; font-weight: bold; }
+.card { background: #ecf0f1; padding: 15px; margin-bottom: 10px; border-radius: 4px; }
+
+/* Responsive básico */
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "content"
+            "left"
+            "right"
+            "footer";
+    }
+}
